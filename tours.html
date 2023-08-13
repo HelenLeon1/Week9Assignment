@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tours</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css"/>
+  </head>
+
+  <body class="text-center bg-body-tertiary">
+    <!--Navigation Bar-->
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-primary" href="#">Beyond Our Borders</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" href="contact.html">Tours</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h3 class="text-primary my-5">New Tour Packages!</h3>
+    <img src="https://images.unsplash.com/photo-1534777367038-9404f45b869a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGN1bHR1cmV8ZW58MHwwfDB8fHww&auto=format&fit=crop&w=500&q=60" class="rounded mx-auto my-5 d-block" alt="temple" />
+    <p class="container text-start my-4">This year, we will be offering three private tours. Each tour includes accomodations for the entire stay, two meals per day, transportation,
+      attractions, and free souvenirs for two people. Listed below are the countries that we will be traveling to with information about what each
+      tour includes as well as the price. Please call us at 555-555-5555 or email us at beyondourborders.com if you would like more information or 
+      you can fill out the form below for more information. Hope to see you soon!
+    </p>
+
+    <!--Table-->
+    <h4 class="text-primary-emphasis mb-4">Tours 2023</h4>
+    <div class="container">   
+      <table class="table border">
+        <thead>
+          <tr>
+            <th scope="col">Country</th>
+            <th scope="col">Cities</th>
+            <th scope="col">Attractions Included</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr>
+            <th scope="row">Thailand (Three Weeks)</th>
+            <td>
+              <ul class="list-unstyled">
+                <li>Bangkok</li>
+                <li>Chang Mai</li>
+                <li>Ko Samui: Beaches</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="list-unstyled">
+                <li>City and Temples</li>
+                <li>Doi Ithanon and Elephant Rescue</li>
+                <li>Beach Resort</li>
+              </ul>
+            </td>
+            <td>$12,000.00 for two people</td>
+          </tr>
+          <tr>
+            <th scope="row">Brazil (Two Weeks)</th>
+            <td>
+              <ul class="list-unstyled">
+                <li>Rio de Janeiro</li>
+                <li>Sao Paulo</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="list-unstyled">
+                <li>Christ The Redeemer Statue</li>
+                <li>Beaches Ipanema and Copacanbana</li>
+                <li>Pao de Acucar</li>
+                <li>Vila Madalena Shopping Vouchers</li>
+              </ul>
+            </td>
+            <td>$8,000.00 for two people</td>
+          </tr>
+          <tr>
+            <th scope="row">Italy (Three Weeks)</th>
+            <td>
+              <ul class="list-unstyled">
+                <li>Rome</li>
+                <li>Florence</li>
+                <li>Venice</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="list-unstyled">
+                <li>Coloseum and Roman Forum</li>
+                <li>Uffizzi Gallery and Pitti Palace</li>
+                <li>St. Mark's Basilia and Gondola ride</li>
+              </ul>
+            </td>
+            <td>$15,000.00 for two people</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!--Contact Form-->
+      <h5 class="my-5">Contact Form</h5>
+        <form class="container my-5">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+          </div>
+        <div class="row my-4">
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="col">
+            <input type="phonenumber" class="form-control" id="phonenumber" placeholder="Phone Number">
+        </div>
+        </div>
+          <div class="row my-3">
+            <select class="col form-select">
+              <option selected>Select Tour Package</option>
+              <option value="1">Thailand</option>
+              <option value="2">Brazil</option>
+              <option value="3">Italy</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="col my-4">
+              <textarea class="form-control" placeholder="Write Comments Here" id="comments" rows="3" style="width: 75%"></textarea>
+            </div>
+          </div>
+          <div class="container">
+          <a href="#" class="btn btn-primary">Submit</a>
+          </div>
+        </form>
+      </div>
+      </form>
+  </body>
+  <hr>
+  <footer class="my-4">Beyond Our Borders</footer>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</html>
